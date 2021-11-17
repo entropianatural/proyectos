@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- añadimos libreria font awesome para iconos sol y luna -->
+	<script src="https://kit.fontawesome.com/32585c166a.js" crossorigin="anonymous"></script>
+
+<!-- añadimos libreria javascript que controla el modo oscuro -->
+	<script src="modooscuro.js"></script>
+
+	<link rel="stylesheet" href="estilo.css">
+
+
+	<title>Modo Oscuro</title>
+</head>
+<body>
+	<div class="contenedor">
+
+		<input type="checkbox" class="checkbox" id="chk" />
+
+
+		<!-- La etiqueta label con el atributo for y el nombre del elemento que queremos hacer referencia, tendremos el control sobre este -->
+		<label class="label" for="chk">
+			<i class="fas fa-moon"></i>
+			<i class="fas fa-sun"></i>
+			<div class="ball"></div>
+		</label>
+	</div>
+</body>
+</html>
