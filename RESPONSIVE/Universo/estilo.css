@@ -1,0 +1,173 @@
+:root{
+	--izquierda: 20%;
+	--derecha: calc(100% - var(--izquierda));
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main{
+	display: flex;
+	height: 100vh;
+}
+
+
+main .header{
+
+	position: relative;
+	
+	/*FORMA DE CAJA*/
+	min-width: var(--izquierda);
+	flex: var(--izquierda);
+	
+	height: 100%;
+	min-height: 100vh;
+
+
+	/*padding: 20px;*/
+
+	transition: all .5s linear;
+
+	background-color:  #212121  ;
+}
+
+/*escondemos los elementos de la cabecera
+que solo apareceran al hacer pequeña la pantalla*/
+main .header h1{
+	display: none;
+	color:  #f1f1f1;
+}
+
+main .header i{
+	display: none;
+	color:  #f1f1f1;
+}
+
+main .menu{
+	
+
+	height: 100%;
+	min-width: 20%;
+	flex: 20%;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/*con esto evitamos que los botones se
+	salgan de la sección por los lados 
+	cuando la pantalla se hace estrecha*/
+	padding:  20px;
+
+}
+
+main .menu .menu-items{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+main .menu .menu-items li{
+	margin-top: 20px;
+	width: 100%;
+}
+
+main .menu .menu-items li a{
+
+	padding: 10px 20px;
+
+	display: inline-block;
+
+	border: 2px solid #f1f1f1;
+
+	border-radius: 5px;
+
+	color: #f1f1f1;
+
+	text-decoration: none;
+
+	text-align: center;
+
+	width: 100%;
+}
+
+main .menu .menu-items li a:hover{
+	color: #212121 ;
+	background-color: #f1f1f1;
+
+}
+
+main .principal{
+	background-color:  #5dade2  ;
+	flex: calc(100% - var(--izquierda));
+	height: 100%;
+	transition: all .5s linear;
+	height: 100vh;
+}
+
+main .principal .hero-image{
+	background-image: url(galaxia.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 100%;
+}
+
+main .principal .aboutMe{
+	background-image: url(luna.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 100%;
+}
+
+
+@media screen and (max-width:  990px){
+
+	main{
+		flex-direction: column;
+	}
+
+	/*volvemos a incorporar los botones
+	a la cabecera*/
+	main .header h1{
+		display: inline-flex;
+	}
+
+	main .header i{
+		display: inline-flex;
+	}
+
+	main .header{
+		flex: 13%;
+		min-width: 13%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+
+		min-height: 0;
+
+	}
+
+	main .header .menu{
+		display: none;
+	}
+
+	main .principal{
+		flex: 87%;
+		min-width: 87%;
+	}
+}
+
+

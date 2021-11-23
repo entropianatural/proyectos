@@ -5,12 +5,12 @@
 }
 
 body{
-	background-color: #757575;
+	background-color: #f1f1f1;
 }
 
 
 .proyectos{
-	height: 100vh;
+	height: 80vh;
 	width: 100vw;
 
 	
@@ -19,6 +19,8 @@ body{
 
 	justify-content: center;
 	align-items: center;
+	
+	flex-direction: column;
 }
 
 .titulo{
@@ -35,4 +37,18 @@ article{
 
 	justify-content: center;
 	align-items: center;
+}
+
+.btn-borde {
+  padding: .375rem .75rem;
+  border: 1px solid #007bff;
+  border-radius: .25rem;
+  color: #007bff;
+  transition: color .15s ease-in-out,
+    background-color .15s ease-in-out;
+}
+
+.btn-borde:hover, .btn-borde:active, .btn-borde:focus {
+  color: #fff;
+  background-color: #007bff;
 }
