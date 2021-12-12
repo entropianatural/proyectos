@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Lato&display=swap');	
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	background-color: #f4f4f7;
+}
+
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 10px;
+
+
+	background-color: wheat;
+}
+
+.izquierda{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.titulo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Fuzzy Bubbles', cursive;	
+}
+
+.titulo span{
+	margin-right: 10px;
+}
+
+nav{
+	margin-left: 20px;	
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	list-style: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	margin: 0 10px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	color: black;
+}
+
+nav ul li a:hover > span {
+	color: #3498DB;
+
+}
+
+nav ul li a span:nth-child(1){
+	margin-right: 10px;
+}
+
+.derecha{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+
+.derecha .botonera{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-left: 10px;		
+}
+
+.derecha .botonera span{
+	margin: 0 5px;	
+}
+
+span{
+	cursor: pointer;
+	font-family: 'Lato', sans-serif;
+}
+
+.burguer-boton{
+	display: none;
+}
+
+
+@media screen and (max-width: 1050px){
+	.btn-desc{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 750px){
+	.burguer-boton{
+		display: inline-flex;
+	}
+	.menu{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.derecha input{
+		display: none;
+	}
+}
