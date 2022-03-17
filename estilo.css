@@ -6,21 +6,31 @@
 
 body{
 	background-color: #f1f1f1;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 
 .proyectos{
-	height: 80vh;
-	width: 100vw;
+
+
+
+	display: grid;
+	grid-auto-rows: 150px;
+
 
 	
 
-	display: flex;
+/*	display: flex;
 
 	justify-content: center;
 	align-items: center;
 	
-	flex-direction: column;
+	flex-direction: column;*/
 }
 
 .titulo{
@@ -28,11 +38,6 @@ body{
 }
 
 article{
-	flex: 50%;
-
-	height: 100vh;
-	width: 100vw;
-
 	display: flex;
 
 	justify-content: center;
