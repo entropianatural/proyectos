@@ -1,0 +1,233 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+
+	
+}
+
+.modal{
+	
+	pointer-events: none;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	opacity: 0;
+
+}
+
+.overlay{
+	background-color: lightpink;
+	width: 100%;
+	height: 100%;
+	opacity: 50%;
+	position: absolute;
+}
+
+#popup:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+.close{
+
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	background-color: #e7514c;
+
+}
+
+.contentmodal{
+	display: flex;
+
+	justify-content: center;
+	align-items:center;
+
+	background-color: white;
+	
+	padding: 5px;
+	position: relative;
+	border: 3px solid #000;
+	
+	
+	
+}
+
+.contentmodal p{
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+
+
+.contenedorgeneral{
+	height: 100vh;
+	
+	/*background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	position: relative;*/
+
+	    
+}	
+
+
+
+.contenedorespecifico::before{
+	content: "";
+	filter: blur(5px);
+	height: 100%;
+	width: 100%;
+	background-image: url(../imagenes3/chicoescritorio.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	position: absolute;
+	opacity: 0.6;
+	z-index:-1;
+
+}
+
+.contenedorespecifico{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+}
+
+.favilista{
+	display: flex;
+	justify-content: space-around;
+}
+
+section,header{
+	flex: 1 1 2%;
+	display: flex;
+	gap: 60px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 30px;
+	    
+    
+}
+
+
+
+.favicon{
+	height: 81px;
+	width: 150px;
+    
+}
+
+
+
+
+nav ul{
+	display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 32px;
+    text-shadow: 1px 2px 2px grey;
+}
+article.carroboton{
+	display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.carrocompra{
+	width: 21px;
+    height: 21px;
+    padding: 4px;
+}
+
+
+
+.botoncomprar{
+	width: 120px;
+    height: 29px;
+    background-color: #dc2f02;
+    border-radius: 4px;
+    color: #efefef;
+
+}
+
+.hacheboton{
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 98%;
+	justify-content: center;
+	padding-left: 100px;
+	width: 50%;
+	
+}
+article.hacheyparr{
+	display: flex;
+	flex-direction: column;
+	gap: 13px
+	padding-left: 60px;
+	align-items: flex-start;
+
+}
+
+
+h5{
+	padding: 10px;
+	text-shadow: 1px 2px 2px grey;
+}
+
+
+article.cursosregistro{
+	display: flex;
+	padding-left: 80px;
+	gap: 50px;
+	padding-top: 50px;
+	align-items: center;
+}
+h5.cursos{
+	font-size: 20px;
+    text-shadow: -1px 1px 2px grey;
+}
+.botonregistrate{
+	width: 97px;
+    height: 21px;
+    background-color: #dc2f02;
+    border-radius: 4px;
+    color: #efefef;
+
+
+}
+
+
+
+
+.botoncursreg{
+	width: 95px;
+	height: 23px;
+    background-color: #dc2f02;
+    border-radius: 8px;
+    color: #efefef;
+    text-decoration: none;
+
+}
+h1{
+	width: 50%;
+	font-size: 50px;
+	box-shadow: 6px;
+	text-shadow: 1px 3px 3px grey;
+}
+p{
+	width: 50%;
+	font-size: 20px;
+	text-shadow: -1px -1px 1px grey;
+}
+
+
